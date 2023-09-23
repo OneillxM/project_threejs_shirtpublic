@@ -30,7 +30,7 @@ const response = await openai.images.generate({
 
 });
 
-const image = response.data.data[0].b64_json;;
+const image = response.data[0].b64_json;;
 
 res.status(200).json({ photo: image });
 
